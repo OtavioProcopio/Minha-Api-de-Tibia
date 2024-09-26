@@ -1,0 +1,47 @@
+{
+    "creature": {
+      "be_convinced": false,
+      "be_paralysed": false,
+      "be_summoned": false,
+      "behaviour": "string",
+      "convinced_mana": 0,
+      "description": "string",
+      "experience_points": 0,
+      "featured": false,
+      "healed": [
+        "string"
+      ],
+      "hitpoints": 0,
+      "image_url": "string",
+      "immune": [
+        "string"
+      ],
+      "is_lootable": false,
+      "loot_list": [
+        "string"
+      ],
+      "name": "string",
+      "race": "string",
+      "see_invisible": false,
+      "strong": [
+        "string"
+      ],
+      "summoned_mana": 0,
+      "weakness": [
+        "string"
+      ]
+    },
+    "information": {
+      "api": {
+        "commit": "string",
+        "release": "string",
+        "version": 0
+      },
+      "status": {
+        "error": 0,
+        "http_code": 0,
+        "message": "string"
+      },
+      "timestamp": "string"
+    }
+  }
