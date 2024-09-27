@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Minha API de Tibia </title>
-    
+    <title>Creature Info - Tibia API</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Tibia Creature Search</h1>
+
     
+    <input type="text" id="creatureInput" placeholder="Enter creature race" />
+    <button id="searchButton">Search</button>
+
+   
+    <div id="creatureInfo" style="display: none;">
+        <h2 id="creatureName"></h2>
+        <img id="creatureImage" src="" alt="Creature Image" />
+        <p id="creatureDescription"></p>
+        <ul>
+            <li><strong>Hitpoints:</strong> <span id="creatureHealth"></span></li>
+            <li><strong>Experience Points:</strong> <span id="creatureExperience"></span></li>
+            <li><strong>Behaviour:</strong> <span id="creatureAttackType"></span></li>
+            <li><strong>Immunities:</strong> <span id="creatureImmunities"></span></li>
+            <li><strong>Strengths:</strong> <span id="creatureStrengths"></span></li>
+            <li><strong>Weaknesses:</strong> <span id="creatureWeaknesses"></span></li>
+            <li><strong>Loot:</strong> <span id="creatureLoot"></span></li>
+        </ul>
+    </div>
+
+    
+    <p id="errorMessage" style="display: none; color: red;">Creature not found.</p>
+
+    <script src="main.js"></script>
 </body>
 </html>
