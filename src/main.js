@@ -1,5 +1,5 @@
 document.getElementById('searchButton').addEventListener('click', function () {
-    const creature = document.getElementById('creatureInput').value.toLowerCase();
+    let creature = document.getElementById('creatureInput').value.toLowerCase();
 
     const url = `https://api.tibiadata.com/v4/creature/${creature}`;
 
@@ -24,15 +24,10 @@ document.getElementById('searchButton').addEventListener('click', function () {
             document.getElementById('creatureStrengths').textContent = creatureData.strong.join(', ') || "None";
             document.getElementById('creatureWeaknesses').textContent = creatureData.weakness.join(', ') || "None";
             document.getElementById('creatureLoot').textContent = creatureData.loot_list.join(', ') || "None";
-
-            
             document.getElementById('creatureImage').src = creatureData.image_url;
-
-            
             document.getElementById('creatureInfo').style.display = "block";
             document.getElementById('errorMessage').style.display = "none";
         } else {
-            
             document.getElementById('creatureInfo').style.display = "none";
             document.getElementById('errorMessage').style.display = "block";
         }
